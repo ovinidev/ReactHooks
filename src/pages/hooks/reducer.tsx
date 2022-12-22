@@ -26,7 +26,7 @@ export default function Reducer() {
 		modalGreen: false,
 	};
 
-	const [state, dispatch] = useReducer((state: State, action: Action) => {
+	function reducer(state: State, action: Action) {
 		switch (action.type) {
 			case ModalAction.RED:
 				return {
@@ -56,7 +56,9 @@ export default function Reducer() {
 			default:
 				return state;
 		}
-	}, initialState);
+	}
+
+	const [state, dispatch] = useReducer(reducer, initialState);
 
 	return (
 		<Flex h="calc(100vh - 4rem)" align="center" justify="center">
