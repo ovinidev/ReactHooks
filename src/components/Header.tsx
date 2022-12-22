@@ -4,10 +4,11 @@ import Link from 'next/link';
 export const Header = () => {
 	return (
 		<Flex as="header" h="4rem" bg="gray.700" align="center" px="16">
-			<HStack spacing="4">
-				<Link href="/hooks/context">Context</Link>
+			<HStack spacing="4" fontFamily="Roboto">
+				<Link href="/hooks/context">ChakraLink</Link>
 				<Link href="/hooks/effect">Effect</Link>
 				<Link href="/hooks/state">State</Link>
+				<Link href="/hooks/reducer">Reducer</Link>
 			</HStack>
 		</Flex>
 	);
