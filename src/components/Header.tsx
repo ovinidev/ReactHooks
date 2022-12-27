@@ -10,6 +10,8 @@ export const Header = () => {
 				<Link href="/hooks/state">State</Link>
 				<Link href="/hooks/reducer">Reducer</Link>
 				<Link href="/hooks/callback">Callback</Link>
+				<Link href="/hooks/memo">Memo</Link>
+				<Link href="/hooks/ref">Ref</Link>
 			</HStack>
 		</Flex>
 	);
