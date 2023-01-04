@@ -1,5 +1,5 @@
 import { Flex, HStack } from '@chakra-ui/react';
-import Link from 'next/link';
+import { Link } from './Link';
 
 export const Header = () => {
 	return (
